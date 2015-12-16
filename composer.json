@@ -1,5 +1,5 @@
 {
-  "name": "everyman/neo4jphp",
+  "name": "esynaps/neo4j-php",
   "type": "library",
   "description": "Wrapper for the Neo4j graph database REST interface",
   "keywords": ["neo4j","graph","database"],
