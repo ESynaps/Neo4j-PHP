@@ -101,4 +101,12 @@ class ResultSet implements \Iterator, \Countable, \ArrayAccess
 	{
 		return isset($this->data[$this->position]);
 	}
+	
+	public function getData() {
+	   $data = [];
+	   foreach($this->data[0] as $key=>$row){
+		  $data[$this->columns[$key]] = $row;
+	   }
+	   return $data;
+	}
 }
