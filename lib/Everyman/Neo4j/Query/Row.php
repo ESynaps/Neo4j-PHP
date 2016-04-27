@@ -113,4 +113,12 @@ class Row implements \Iterator, \Countable, \ArrayAccess
 	{
 		return $this->position < count($this->raw);
 	}
+	
+	public function getRaw() {
+		return $this->raw;
+	}
+
+	public function getData() {
+		return $this->data;
+	}
 }
