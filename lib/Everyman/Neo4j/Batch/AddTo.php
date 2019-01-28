@@ -92,6 +92,6 @@ class AddTo extends Operation
 	 */
 	public function matchId()
 	{
-		return parent::matchId() . spl_object_hash($this->index) . $this->key . $this->value;
+		return parent::matchId() . spl_object_hash($this->index) . $this->key . is_array($this->value) ? serialize($this->value) : $this->value;
 	}
 }
